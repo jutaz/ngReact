@@ -281,6 +281,7 @@
             });
             scopeProps = applyFunctions(scopeProps, scope, config);
             scopeProps = angular.extend({}, scopeProps, injectableProps);
+            scopeProps.$scope = scope;
             renderComponent(reactComponent, scopeProps, scope, elem);
           };
 
